@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>parsley tests</title>
+    <style>
+        form {
+            background-color: #ccc;
+            width: 500px;
+        }
+        label {
+            display: block;
+        }
+        label input[type="radio"] {
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="/" id="newsletter-form">
+        <input type="hidden" name="xid" value="432534FGSFGKER8Y34KERA">
+
+        <div class="form-group">
+            <label for="email">email
+                <input type="text" name="email" name="email" value="" required>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="zipcode">
+                zipcode
+                <input type="text" id="zipcode" name="zipcode" value="" required>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="radio1">radio select 1
+                <input type="radio" id="radio1" name="opt_out_reason">
+            </label>
+            <label for="radio2">radio select 2
+                <input type="radio" id="radio2" name="opt_out_reason">
+            </label>
+            <label for="radio3">radio select 3
+                <input type="radio" id="radio3" name="opt_out_reason">
+            </label>
+            <label for="radio4">radio select 4
+                <input type="radio" id="radio4" name="opt_out_reason">
+            </label>
+            <label for="radio5">radio select 5
+                <input type="radio" id="radio5" name="opt_out_reason">
+            </label>
+        </div>
+        <button id="go" type="submit" value="submit">go!</button>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/parsley.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

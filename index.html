@@ -2,27 +2,18 @@
 <head>
     <meta charset="UTF-8">
     <title>parsley tests</title>
-    <style>
-        form {
-            background-color: #ccc;
-            width: 500px;
-        }
-        label {
-            display: block;
-        }
-        label input[type="radio"] {
-            float: left;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/parsley.min.js"></script>
 </head>
 <body>
+
     <form action="/" id="newsletter-form">
         <input type="hidden" name="xid" value="432534FGSFGKER8Y34KERA">
 
         <div class="form-group">
             <label for="email">email
-                <input type="text" name="email" name="email" value="" required>
+                <input type="email" name="email" id="email" value="" required>
             </label>
         </div>
 
@@ -53,8 +44,8 @@
         <button id="go" type="submit" value="submit">go!</button>
     </form>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/parsley.min.js"></script>
+    <h3><a href="http://parsleyjs.org/doc/index.html" target="_blank">http://parsleyjs.org/doc/index.html</a><br />
+    <a href="http://docs.emmet.io/abbreviations/syntax/" target="_blank">http://docs.emmet.io/abbreviations/syntax/</a></h3>
     <script src="js/main.js"></script>
 </body>
 </html>

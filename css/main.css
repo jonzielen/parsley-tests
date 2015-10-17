@@ -40,7 +40,9 @@ form {
 }
 label {
     display: block;
+    min-height: 20px;
 }
 label input[type="radio"] {
     float: left;
+    margin-right: 6px;
 }
